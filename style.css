@@ -16,16 +16,15 @@ html{
 /************ inicio ****************/
 /************ header ****************/
 header{
-    width:320px;
-    height: 76px;
+    width:100%;
+    height: auto;
 }
 .navbar {
-    position: relative; /* Asegura que el z-index tenga efecto */
-    z-index: 1000; /* Un valor alto para asegurarte de que esté por encima de otros elementos */
-}
+    position: relative; 
+    z-index: 1000; }
 .navbar-toggler {
-    border: none; /* Elimina el borde alrededor del botón */
-    background: transparent; /* Establece el fondo como transparente */
+    border: none; 
+    background: transparent;
 }
 .navbar-nav a:hover{
     color: white;
@@ -33,15 +32,18 @@ header{
 
 }
 .navbar-expand-lg{
-    background-color: rgba(237, 122, 169, .1)
+    width: 100%;
+    background-color: #F7DFE9;
 }
 header .navbar-brand img{
     width:64px;
-    height: 45px;
+    max-width: 238px;
+    height: auto;
     margin-left: 20px;
 }
 .header--halfStar img{
     width:56px;
+    max-width: 145px;
     height: auto;
     position: absolute;
     bottom:0
@@ -49,6 +51,7 @@ header .navbar-brand img{
 }
 .header--halfCircle img{
     width:47px;
+    max-width: 167px;
     height: auto;
     position: absolute;
     top:0;
@@ -56,7 +59,8 @@ header .navbar-brand img{
 }
 /************* home section **************/
 .home-section{
-    width:320px;
+    width:100%;
+    max-width: 1280px;
     height: 370px;
     display: flex;
     flex-direction: column;
@@ -68,6 +72,7 @@ header .navbar-brand img{
 
 .deco--flower{
     width: 50px;
+    max-width: 185px;
     height: auto;
     position: absolute;
     bottom: 0;
@@ -75,6 +80,7 @@ header .navbar-brand img{
 }
 .deco--heart{
     width:63px;
+    max-width: 146px;
     position: absolute;
     top: .5;
     right: 0;
@@ -82,6 +88,7 @@ header .navbar-brand img{
 
 .home-section--img img{
     width: 158px;
+    max-width: 364px;
     height: auto;
 }
 .home-section--txt {
@@ -89,9 +96,8 @@ header .navbar-brand img{
     margin-top: 20px;
 }
 
-
 .home-section--txt h1{
-    margin-top: 10px;
+    margin-top: 5px;
     color: black;
     font-size: 2rem;
     text-align: center;
@@ -123,6 +129,7 @@ header .navbar-brand img{
 }
 .forms-section--forms{
     width:300px;
+    max-width: 1000px;
     margin-left: 10px;
 }
 .mb-3{
@@ -150,8 +157,8 @@ header .navbar-brand img{
 footer{
     margin-top: 16px;
     width: auto;
-    /* height: 178px; */
     background-color: #ED7AA9;
+    bottom:0;
 }
 footer div{
     display: flex;
@@ -162,10 +169,12 @@ footer div{
 }
 .footer-section--ig img{
     width:26px;
+    max-width: 42px;
     height: auto;
 }
 .footer-section--tt img{
     width:26px;
+    max-width: 42px;
     height: auto;
     padding-top: 10px;
 }
@@ -177,6 +186,112 @@ footer div{
     font-size: 1.2rem;
     text-decoration: none;
     margin-left: 3px;
+}
+/******************? Catálogo *******************/
+.catalogo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalogo-section h1{
+    color: #ED7AA9;
+    font-family: 'Titan one', sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    text-align: center;
+}
+.catalogo--pulsera{
+    position: relative;
+    margin-top: 20px;
+}
+.catalogo--pulsera2,
+.catalogo--collar{
+    margin-top: 20px;
+}
+.catalogo--pulsera,
+.catalogo--pulsera2,
+.catalogo--collar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalogo--pulsera img,
+.catalogo--pulsera2 img,
+.catalogo--collar img{
+    width:120px;
+    max-width: 158px;
+    height: auto;
+    
+}
+.pulsera--alert{
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.pulsera--alert img{
+    width: 41px;
+    max-width: 72px;
+    height: auto;
+    
+}
+.catalogo--pulsera a,
+.catalogo--pulsera2 a,
+.catalogo--collar a {
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.catalogo-numbers{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+/******************? Nosotros *******************/
+.nosotros-section h1{
+    color: #ED7AA9;
+    font-family: 'Titan one', sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.nosotros--pic img{
+    width: 320px;
+    max-width: 100%;
+    height: 252px;
+    margin-top: 20px;
+}
+.nosotros--txt{
+    margin-top: 15px;
+}
+.nosotros--misión{
+    margin-top: 25px;
+}
+.nosotros--visión{
+    margin-top: 25px;
+}
+.nosotros--txt,.nosotros--misión p,
+.nosotros--visión p{
+    width: 80%;
+    max-width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 10%;
+}
+.nosotros--misión h2,
+.nosotros--visión h2{
+    color: #ED7AA9;
+    font-family: 'Titan one', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.nosotros--visión{
+    margin-bottom: 38px;
 }
 
 
