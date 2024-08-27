@@ -13,51 +13,77 @@
 </head>
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="/assets/img/miyu-logo-oficial.png" alt="miyu-logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li>
-                    <a class="nav-link active" aria-current="page" href="#">Catalogo</a>
-                  </li>
-                  <li>
-                    <a class="nav-link active" aria-current="page" href="#">¿Quienes somos?</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="/assets/img/miyu-logo-oficial.png" alt="miyu-logo"></a>
+                  <div class="header--halfStar" ><img src="assets/ico/half-star.png" alt="half-star-pic"></div>
+                  <div class="header--halfCircle" ><img src="assets/ico/half-circle.png" alt="full-circle-pic"></div>
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" aria-current="page" href="#">Catalogo</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" aria-current="page" href="#">¿Quienes somos?</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        
         <!--                   inicio              -->
-        <section>
-            <img src="assets/ico/half-flower.png" alt="half-flower-pic">
-            <img src="assets/ico/heart.png" alt="full-heart-pic">
-            <div>
+        <section class="home-section">
+            <div class="home-section--deco">
+                <img class="deco--flower" src="assets/ico/half-flower.png" alt="full-flower-pic">
+                <img class="deco--heart" src="assets/ico/heart.png" alt="full-heart-pic">
+            </div>
+            <div class="home-section--img">
                 <img src="assets/img/brasalet.png" alt="brasalet-pic">
             </div>
-            <div>
+            <div class="home-section--txt">
                 <h1>Nueva colección</h1>
                 <h2>MARGARITAS FELICES</h2>
                 <a href="#">Comprar</a>
             </div>
+        </section>
+        <!--              forms             -->
+        <section class="forms-section">
+            <h2>Tu opinión nos importa</h2>
+            <form class="forms-section--forms">
+                <div class="mb-3">
+                    <label for="nameImput" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nameImput" aria-describedby="emailHelp">
+                  </div>
+                <div class="mb-3">
+                  <label for="emailImput" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="emailImput" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="msjInput" class="form-label">Mensaje</label>
+                  <input type="password" class="form-control" id="msjInput">
+                </div>
+                <button type="submit" class="btn forms-btn--submit">Enviar</button>
+              </form>
 
-            
         </section>
 
     </main>
     <footer>
-        <section>
-            <div>
-                <img src="assets/ico/ig_ico.png" alt="instagram_ico"><a href="#">@miyu_creacioness</a>
+        <section class="footer-section--SM">
+            <div class="footer-section--ig">
+                <img class="footer-section--ig" src="assets/ico/ig_ico.png" alt="instagram_ico"><a href="#">@miyu_creacioness</a>
             </div>
-            <div>
-                <img src="assets/ico/tiktok_ico.png" alt="tiktok_ico"><a href="#">@.miyu.creaciones</a>
+            <div class="footer-section--tt">
+                <img class="footer-section--tt" src="assets/ico/tiktok_ico.png" alt="tiktok_ico"><a href="#">@.miyu.creaciones</a>
             </div>
         </section>
         

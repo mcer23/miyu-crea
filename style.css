@@ -1,0 +1,182 @@
+:root{
+    --pink:#ED7AA9;
+    --blue:#24B9FF;}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;}
+  
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    overflow-x:hidden;}
+/* mobile */
+/************ inicio ****************/
+/************ header ****************/
+header{
+    width:320px;
+    height: 76px;
+}
+.navbar {
+    position: relative; /* Asegura que el z-index tenga efecto */
+    z-index: 1000; /* Un valor alto para asegurarte de que esté por encima de otros elementos */
+}
+.navbar-toggler {
+    border: none; /* Elimina el borde alrededor del botón */
+    background: transparent; /* Establece el fondo como transparente */
+}
+.navbar-nav a:hover{
+    color: white;
+    background-color: #24B9FF;
+
+}
+.navbar-expand-lg{
+    background-color: rgba(237, 122, 169, .1)
+}
+header .navbar-brand img{
+    width:64px;
+    height: 45px;
+    margin-left: 20px;
+}
+.header--halfStar img{
+    width:56px;
+    height: auto;
+    position: absolute;
+    bottom:0
+
+}
+.header--halfCircle img{
+    width:47px;
+    height: auto;
+    position: absolute;
+    top:0;
+    
+}
+/************* home section **************/
+.home-section{
+    width:320px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.deco--flower{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.deco--heart{
+    width:63px;
+    position: absolute;
+    top: .5;
+    right: 0;
+}
+
+.home-section--img img{
+    width: 158px;
+    height: auto;
+}
+.home-section--txt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.home-section--txt h1{
+    margin-top: 10px;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+.home-section--txt h2{
+    color: #ED7AA9;
+    font-family: 'Titan one', sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.home-section--txt a{
+    color: black;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+/************** forms ************/
+.forms-section{
+    margin-top: 12px;
+
+}
+.forms-section h2{
+    color: #ED7AA9;
+    font-size: 2.2rem;
+    text-align: center; 
+    font-family: 'Titan one', sans-serif;
+    letter-spacing: 4px;
+}
+.forms-section--forms{
+    width:300px;
+    margin-left: 10px;
+}
+.mb-3{
+    margin-top: 12px;
+}
+.form-label{
+    color: black;
+    font-size: 1.4rem;   
+}
+
+.forms-btn--submit{
+    width: 120px;
+    height: auto;
+    background-color: #ED7AA9;
+    color: white;
+    font-size: 1.4rem;
+    margin: 0 auto; 
+    display: block;
+
+}
+.forms-btn--submit:hover{ /*! no funciona T.T */
+    background-color: #24B9FF;
+}
+/************** footer **************/
+footer{
+    margin-top: 16px;
+    width: auto;
+    /* height: 178px; */
+    background-color: #ED7AA9;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+}
+.footer-section--SM{
+    padding: 12px;
+}
+.footer-section--ig img{
+    width:26px;
+    height: auto;
+}
+.footer-section--tt img{
+    width:26px;
+    height: auto;
+    padding-top: 10px;
+}
+.footer-section--tt a{
+    padding-top: 10px;
+}
+.footer-section--SM div a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+
