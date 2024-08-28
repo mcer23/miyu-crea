@@ -14,6 +14,13 @@ html{
     overflow-x:hidden;}
 /* mobile */
 /************ inicio ****************/
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;}
+
+main{flex-grow: 1;}
+    
 /************ header ****************/
 header{
     width:100%;
@@ -73,30 +80,30 @@ header .navbar-brand img{
     right: 0;}
 /************** footer **************/
 footer{
-    margin-top: 16px;
-    width: auto;
+    margin:0;
+    padding: 20px;
+    width: 100%;
+    height: 178px;
     background-color: #ED7AA9;
-    bottom:0;}
+    bottom:0;
+    display: flex;}
 
-footer div{
-    display: flex;
-    justify-content: center;}
+.footer-section--SM{padding: 12px; margin: 0 auto;}
 
-.footer-section--SM{padding: 12px;}
-    
+.footer-section--SM p{
+    font-family: 'Titan one', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+}   
 
-.footer-section--ig img{
+.footer-section--ig img, .footer-section--tt img{
     width:26px;
     max-width: 42px;
     height: auto;}
 
-.footer-section--tt img{
-    width:26px;
-    max-width: 42px;
-    height: auto;
-    padding-top: 10px;}
-
-.footer-section--tt a{padding-top: 10px;}
+.footer-section--tt{padding-top: 12px;} 
     
 
 .footer-section--SM div a{

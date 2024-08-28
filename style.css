@@ -14,6 +14,13 @@ html{
     overflow-x:hidden;}
 /* mobile */
 /************ inicio ****************/
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;}
+
+main{flex-grow: 1;}
+
 /************ header ****************/
 header{
     width:100%;
@@ -22,14 +29,18 @@ header{
 .navbar {
     position: relative; 
     z-index: 1000; }
+
 .navbar-toggler {
     border: none; 
     background: transparent;}
-
+.navbar-nav{display: flex; flex-direction: row;}
+.navbar-nav a{
+    color: black;
+}
 .navbar-nav a:hover{
     color: white;
     background-color: #24B9FF;}
-
+   
 
 .navbar-expand-lg{
     width: 100%;
@@ -48,7 +59,6 @@ header .navbar-brand img{
     position: absolute;
     bottom:0}
 
-
 .header--halfCircle img{
     width:47px;
     max-width: 167px;
@@ -56,7 +66,6 @@ header .navbar-brand img{
     position: absolute;
     top:0;}
     
-
 /************* home section **************/
 .home-section{
     width:100%;
@@ -68,7 +77,6 @@ header .navbar-brand img{
     justify-content: center;
     position: relative;
     margin: 0 auto;}
-
 
 .deco--flower{
     width: 50px;
@@ -85,7 +93,6 @@ header .navbar-brand img{
     top: .5;
     right: 0;}
 
-
 .home-section--img img{
     width: 158px;
     max-width: 364px;
@@ -94,31 +101,45 @@ header .navbar-brand img{
 .home-section--txt {
     text-align: center;
     margin-top: 20px;}
-
-
+    
 .home-section--txt h1{
     margin-top: 5px;
     color: black;
     font-size: 2rem;
-    text-align: center;}
+    text-align: center;
+    margin-bottom: 15px;}
 
 .home-section--txt h2{
     color: #ED7AA9;
     font-family: 'Titan one', sans-serif;
     font-size: 2.4rem;
     text-align: center;
-    letter-spacing: 10px;}
+    letter-spacing: 10px;
+    margin-bottom: 15px;}
 
-.home-section--txt a{
-    color: black;
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: center;}
+.home-section--txt-btn{
+    background-color: #24B9FF;
+    width: 120px;
+    max-width: 167px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;} 
+    
+   
+.home-section--txt-btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;}
 
 /************** forms ************/
-.forms-section{ margin-top: 12px;}
-   
-
+.forms-section{ 
+    margin-top: 12px;
+    width:98%;
+    max-width: 99%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0, auto;}
 
 .forms-section h2{
     color: #ED7AA9;
@@ -128,9 +149,9 @@ header .navbar-brand img{
     letter-spacing: 4px;}
 
 .forms-section--forms{
-    width:300px;
-    max-width: 1000px;
-    margin-left: 10px;}
+    width:98%;
+    padding:30px 0;
+    margin: 0 auto;}
 
 .mb-3{margin-top: 12px;}
     
@@ -142,12 +163,12 @@ header .navbar-brand img{
 
 .forms-btn--submit{
     width: 120px;
-    height: auto;
     background-color: #ED7AA9;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0 auto; 
-    display: block;}
+    display: block;
+    margin-bottom: 25px;}
 
 
 .forms-btn--submit:hover{ background-color: #24B9FF;} /*! no funciona T.T */
@@ -155,38 +176,44 @@ header .navbar-brand img{
 
 /************** footer **************/
 footer{
-    margin-top: 16px;
-    width: auto;
+    margin:0;
+    padding: 20px;
+    width: 100%;
+    height: 178px;
     background-color: #ED7AA9;
-    bottom:0;}
+    bottom:0;
+    display: flex;}
 
-footer div{
+.footer-section--SM{
+    padding: 12px; 
+    margin: 0 auto; 
     display: flex;
-    justify-content: center;}
+    flex-direction: column;
+    align-items: center;} *
+  
+.footer-section--SM p{
+    font-family: 'Titan one', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;}  
+ 
+.footer-section--ig, .footer-section--tt {
+    display: flex;
+    align-items: center;} 
 
-.footer-section--SM{padding: 12px;}
+.footer-section--tt{margin-top: 12px;}
     
-
-.footer-section--ig img{
+.footer-section--ig img, .footer-section--tt img{
     width:26px;
     max-width: 42px;
     height: auto;}
-
-.footer-section--tt img{
-    width:26px;
-    max-width: 42px;
-    height: auto;
-    padding-top: 10px;}
-
-.footer-section--tt a{padding-top: 10px;}
-    
 
 .footer-section--SM div a{
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
     margin-left: 3px;}
-
 
 /******************? Nosotros *******************/
 .nosotros-section h1{
@@ -197,22 +224,25 @@ footer div{
     text-align: center;
     margin-top: 20px;}
     
+.nosotros--pic{
+    background-color: rgba(237,122,169,.38);
+    width: 100%;
+    height: 252px;
+    display: flex;
+    margin-top: 40px;}
 
 .nosotros--pic img{
-    width: 320px;
-    max-width: 100%;
-    height: 252px;
-    margin-top: 20px;}
+    width:162px;
+    max-width: 315px;
+    height: auto;
+    margin:0 auto;}
 
-.nosotros--txt{margin-top: 15px;}
+.nosotros--txt{margin: 25px 0;}
     
-
 .nosotros--misión{margin-top: 25px;}
     
-
 .nosotros--visión{margin-top: 25px;}
     
-
 .nosotros--txt,.nosotros--misión p,
 .nosotros--visión p{
     width: 80%;
@@ -245,55 +275,85 @@ footer div{
     .header--halfCircle img{
         width:75px;
         max-width: 167px;}
-
-    .home-section{
-        height: 851px;}
-    .deco--flower{
+/* Tablet: home section */
+.home-section{height: 851px;}
+        
+.deco--flower{
         width: 115px;
         max-width: 185px;}
         
-    .deco--heart{
+.deco--heart{
         width:120px;
         max-width: 146px;}
 
-    .home-section--img img{
+.home-section--img img{
         width: 240px;
         max-width: 364px;}
 
-    .forms-section h2{
-        font-size: 2.4rem;}
+.home-section--txt-btn{width: 148px;} 
+              
+.home-section--txt-btn a{font-size: 1.6rem;} 
+               
+/* Tablet: forms */
 
+.forms-section h2{font-size: 2.4rem;}
+    
+
+.forms-section--forms{width:600px;}
+       
+
+.form-label{font-size: 1.4rem;}
    
-    .forms-section--forms {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; }
+    
+.forms-btn--submit{
+    width: 148px;
+    font-size: 1.6rem;
+    margin-top: 20px;}
+    
+/* Tablet: Footer  */
+
+.footer-section--SM p{font-size: 1.8rem;}
+    
+.footer-section--SM div a{font-size: 1.8rem;}
+    
+    
+/******************? Nosotros *******************/
+    
+.nosotros--pic{
+    height: 324px;
+    margin-top: 100px;}
+
+.nosotros--pic img{width:208px;} 
        
+.nosotros--txt,.nosotros--misión p,
+.nosotros--visión p{font-size: 1.8rem;}
     
-    .forms-section--forms .mb-3 {width: 48%;}
-            
-        
     
-        /* Asegurar que el campo de Mensaje ocupe toda la fila */
-    .forms-section--forms .mb-3:nth-child(3) {width: 100%; }
-            
-       
+.nosotros--misión h2,
+.nosotros--visión h2{font-size: 2rem;}
+     
+}
+/*?  D  E   S   K   T   O   P     */
+@media(min-width:1279px){
+    /* Desktop: header */
+    .navbar-nav {
+        font-size: 1.8rem;
+        margin:0 auto;
+    }
+   
     
-    .form-label{
-        font-size: 1.6rem;}
-
-
-    .forms-btn--submit{
-        width: 151px;
-        font-size: 1.6rem;}
-        
-
-        
-        
-
-
-
     
+    header .navbar-brand img{width:98px;}
+
+    .header--halfStar img{width:120px;right:10%;}
+
+    .header--halfCircle img{width:120px;right: 0;}
+        
+        
+
+
+
+
 }
     
 
