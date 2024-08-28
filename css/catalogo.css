@@ -1,0 +1,187 @@
+:root{
+    --pink:#ED7AA9;
+    --blue:#24B9FF;}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;}
+  
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    overflow-x:hidden;}
+/* mobile */
+/************ inicio ****************/
+/************ header ****************/
+header{
+    width:100%;
+    height: auto;}
+
+.navbar {
+    position: relative; 
+    z-index: 1000; }
+.navbar-toggler {
+    border: none; 
+    background: transparent;}
+
+.navbar-nav a:hover{
+    color: white;
+    background-color: #24B9FF;}
+
+
+.navbar-expand-lg{
+    width: 100%;
+    background-color: #FFF9FB;}
+
+header .navbar-brand img{
+    width:64px;
+    max-width: 238px;
+    height: auto;
+    margin-left: 20px;}
+
+.header--halfStar img{
+    width:56px;
+    max-width: 145px;
+    height: auto;
+    position: absolute;
+    bottom:0}
+
+
+.header--halfCircle img{
+    width:47px;
+    max-width: 167px;
+    height: auto;
+    position: absolute;
+    top:0;}
+    
+/******** Deco **********/
+.deco--flower{
+    width: 50px;
+    max-width: 185px;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 0;}
+
+.deco--heart{
+    width:63px;
+    max-width: 146px;
+    position: absolute;
+    top: 1;
+    right: 0;}
+/************** footer **************/
+footer{
+    margin-top: 16px;
+    width: auto;
+    background-color: #ED7AA9;
+    bottom:0;}
+
+footer div{
+    display: flex;
+    justify-content: center;}
+
+.footer-section--SM{padding: 12px;}
+    
+
+.footer-section--ig img{
+    width:26px;
+    max-width: 42px;
+    height: auto;}
+
+.footer-section--tt img{
+    width:26px;
+    max-width: 42px;
+    height: auto;
+    padding-top: 10px;}
+
+.footer-section--tt a{padding-top: 10px;}
+    
+
+.footer-section--SM div a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 3px;}
+
+/******************? Catálogo *******************/
+.catalogo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.catalogo-section h1{
+    color: #ED7AA9;
+    font-family: 'Titan one', sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    text-align: center;}
+
+.catalogo--pulsera{
+    position: relative;
+    margin-top: 20px;}
+
+.catalogo--pulsera2,
+.catalogo--collar{
+    margin-top: 20px;}
+
+.catalogo--pulsera,
+.catalogo--pulsera2,
+.catalogo--collar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.catalogo--pulsera p, .catalogo--pulsera2 p,
+.catalogo--collar p{
+    color: #ED7AA9;
+    font-family: 'Titan one', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    text-align: center;
+
+}    
+
+.catalogo--pulsera img,
+.catalogo--pulsera2 img,
+.catalogo--collar img{
+    width:120px;
+    max-width: 158px;
+    height: auto;}
+    
+
+.pulsera--alert{
+    position:absolute;
+    top: 0;
+    left: 0;}
+
+.pulsera--alert img{
+    width: 41px;
+    max-width: 72px;
+    height: auto;}
+    
+
+.catalogo--pulsera a,
+.catalogo--pulsera2 a,
+.catalogo--collar a {
+    width: 79px;
+    max-width: 137px;
+    height: auto;
+    background-color: #24B9FF;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;}
+
+
+.catalogo-numbers{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;}

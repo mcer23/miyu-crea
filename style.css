@@ -17,46 +17,46 @@ html{
 /************ header ****************/
 header{
     width:100%;
-    height: auto;
-}
+    height: auto;}
+
 .navbar {
     position: relative; 
     z-index: 1000; }
 .navbar-toggler {
     border: none; 
-    background: transparent;
-}
+    background: transparent;}
+
 .navbar-nav a:hover{
     color: white;
-    background-color: #24B9FF;
+    background-color: #24B9FF;}
 
-}
+
 .navbar-expand-lg{
     width: 100%;
-    background-color: #F7DFE9;
-}
+    background-color: #FFF9FB;}
+
 header .navbar-brand img{
     width:64px;
     max-width: 238px;
     height: auto;
-    margin-left: 20px;
-}
+    margin-left: 20px;}
+
 .header--halfStar img{
     width:56px;
     max-width: 145px;
     height: auto;
     position: absolute;
-    bottom:0
+    bottom:0}
 
-}
+
 .header--halfCircle img{
     width:47px;
     max-width: 167px;
     height: auto;
     position: absolute;
-    top:0;
+    top:0;}
     
-}
+
 /************* home section **************/
 .home-section{
     width:100%;
@@ -67,8 +67,8 @@ header .navbar-brand img{
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 0 auto;
-}
+    margin: 0 auto;}
+
 
 .deco--flower{
     width: 50px;
@@ -76,69 +76,69 @@ header .navbar-brand img{
     height: auto;
     position: absolute;
     bottom: 0;
-    left: 0;
-}
+    left: 0;}
+
 .deco--heart{
     width:63px;
     max-width: 146px;
     position: absolute;
     top: .5;
-    right: 0;
-}
+    right: 0;}
+
 
 .home-section--img img{
     width: 158px;
     max-width: 364px;
-    height: auto;
-}
+    height: auto;}
+
 .home-section--txt {
     text-align: center;
-    margin-top: 20px;
-}
+    margin-top: 20px;}
+
 
 .home-section--txt h1{
     margin-top: 5px;
     color: black;
     font-size: 2rem;
-    text-align: center;
-}
+    text-align: center;}
+
 .home-section--txt h2{
     color: #ED7AA9;
     font-family: 'Titan one', sans-serif;
     font-size: 2.4rem;
     text-align: center;
-    letter-spacing: 10px;
-}
+    letter-spacing: 10px;}
+
 .home-section--txt a{
     color: black;
     font-size: 1.8rem;
     display: flex;
-    justify-content: center;
-}
-/************** forms ************/
-.forms-section{
-    margin-top: 12px;
+    justify-content: center;}
 
-}
+/************** forms ************/
+.forms-section{ margin-top: 12px;}
+   
+
+
 .forms-section h2{
     color: #ED7AA9;
     font-size: 2.2rem;
     text-align: center; 
     font-family: 'Titan one', sans-serif;
-    letter-spacing: 4px;
-}
+    letter-spacing: 4px;}
+
 .forms-section--forms{
     width:300px;
     max-width: 1000px;
-    margin-left: 10px;
-}
-.mb-3{
-    margin-top: 12px;
-}
+    margin-left: 10px;}
+
+.mb-3{margin-top: 12px;}
+    
+
 .form-label{
     color: black;
-    font-size: 1.4rem;   
-}
+    font-size: 1.4rem;}
+
 
 .forms-btn--submit{
     width: 120px;
@@ -147,108 +147,47 @@ header .navbar-brand img{
     color: white;
     font-size: 1.4rem;
     margin: 0 auto; 
-    display: block;
+    display: block;}
 
-}
-.forms-btn--submit:hover{ /*! no funciona T.T */
-    background-color: #24B9FF;
-}
+
+.forms-btn--submit:hover{ background-color: #24B9FF;} /*! no funciona T.T */
+   
+
 /************** footer **************/
 footer{
     margin-top: 16px;
     width: auto;
     background-color: #ED7AA9;
-    bottom:0;
-}
+    bottom:0;}
+
 footer div{
     display: flex;
-    justify-content: center;
-}
-.footer-section--SM{
-    padding: 12px;
-}
+    justify-content: center;}
+
+.footer-section--SM{padding: 12px;}
+    
+
 .footer-section--ig img{
     width:26px;
     max-width: 42px;
-    height: auto;
-}
+    height: auto;}
+
 .footer-section--tt img{
     width:26px;
     max-width: 42px;
     height: auto;
-    padding-top: 10px;
-}
-.footer-section--tt a{
-    padding-top: 10px;
-}
+    padding-top: 10px;}
+
+.footer-section--tt a{padding-top: 10px;}
+    
+
 .footer-section--SM div a{
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
-    margin-left: 3px;
-}
-/******************? Catálogo *******************/
-.catalogo-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.catalogo-section h1{
-    color: #ED7AA9;
-    font-family: 'Titan one', sans-serif;
-    font-size: 2.4rem;
-    letter-spacing: 4px;
-    margin-top: 20px;
-    text-align: center;
-}
-.catalogo--pulsera{
-    position: relative;
-    margin-top: 20px;
-}
-.catalogo--pulsera2,
-.catalogo--collar{
-    margin-top: 20px;
-}
-.catalogo--pulsera,
-.catalogo--pulsera2,
-.catalogo--collar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.catalogo--pulsera img,
-.catalogo--pulsera2 img,
-.catalogo--collar img{
-    width:120px;
-    max-width: 158px;
-    height: auto;
-    
-}
-.pulsera--alert{
-    position:absolute;
-    top: 0;
-    left: 0;
-}
-.pulsera--alert img{
-    width: 41px;
-    max-width: 72px;
-    height: auto;
-    
-}
-.catalogo--pulsera a,
-.catalogo--pulsera2 a,
-.catalogo--collar a {
-    color: black;
-    font-size: 1.4rem;
-    margin-top: 10px;
-}
+    margin-left: 3px;}
 
-.catalogo-numbers{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
+
 /******************? Nosotros *******************/
 .nosotros-section h1{
     color: #ED7AA9;
@@ -256,42 +195,107 @@ footer div{
     font-size: 2.4rem;
     letter-spacing: 4px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px;}
     
-}
+
 .nosotros--pic img{
     width: 320px;
     max-width: 100%;
     height: 252px;
-    margin-top: 20px;
-}
-.nosotros--txt{
-    margin-top: 15px;
-}
-.nosotros--misión{
-    margin-top: 25px;
-}
-.nosotros--visión{
-    margin-top: 25px;
-}
+    margin-top: 20px;}
+
+.nosotros--txt{margin-top: 15px;}
+    
+
+.nosotros--misión{margin-top: 25px;}
+    
+
+.nosotros--visión{margin-top: 25px;}
+    
+
 .nosotros--txt,.nosotros--misión p,
 .nosotros--visión p{
     width: 80%;
     max-width: 100%;
     font-size: 1.2rem;
     text-align: center;
-    margin-left: 10%;
-}
+    margin-left: 10%;}
+
 .nosotros--misión h2,
 .nosotros--visión h2{
     color: #ED7AA9;
     font-family: 'Titan one', sans-serif;
     font-size: 2rem;
     letter-spacing: 4px;
-    text-align: center;
+    text-align: center;}
+
+.nosotros--visión{margin-bottom: 38px;}
+
+/*?   T    A   B   L   E   T                       */
+@media(min-width:743px) and (max-width:1279) {
+    header .navbar-brand img{
+        width:78px;
+        max-width: 238px;}
+    
+    .header--halfStar img{
+        width:83px;
+        max-width: 145px;}
+
+
+    .header--halfCircle img{
+        width:75px;
+        max-width: 167px;}
+
+    .home-section{
+        height: 851px;}
+    .deco--flower{
+        width: 115px;
+        max-width: 185px;}
+        
+    .deco--heart{
+        width:120px;
+        max-width: 146px;}
+
+    .home-section--img img{
+        width: 240px;
+        max-width: 364px;}
+
+    .forms-section h2{
+        font-size: 2.4rem;}
+
+   
+    .forms-section--forms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+       
+    
+    .forms-section--forms .mb-3 {width: 48%;}
+            
+        
+    
+        /* Asegurar que el campo de Mensaje ocupe toda la fila */
+    .forms-section--forms .mb-3:nth-child(3) {width: 100%; }
+            
+       
+    
+    .form-label{
+        font-size: 1.6rem;}
+
+
+    .forms-btn--submit{
+        width: 151px;
+        font-size: 1.6rem;}
+        
+
+        
+        
+
+
+
+    
 }
-.nosotros--visión{
-    margin-bottom: 38px;
-}
+    
+
 
 
