@@ -341,13 +341,78 @@ footer{
         margin:0 auto;
     }
    
-    
-    
     header .navbar-brand img{width:98px;}
 
     .header--halfStar img{width:120px;right:10%;}
 
     .header--halfCircle img{width:120px;right: 0;}
+
+    /* Desktop: home section */
+    .home-section{height: 490px;}
+            
+    .deco--flower{width: 185px;}
+            
+    .deco--heart{width:146px;}
+            
+    .home-section--img img{width: 364px;}
+            
+    .home-section--txt-btn{width: 148px;} 
+                
+    .home-section--txt-btn a{font-size: 1.8rem;} 
+
+/* Desktop: forms */
+.forms-section h2{font-size: 2.4rem;}
+    
+
+.forms-section--forms{width:600px;}
+       
+
+.form-label{font-size: 1.4rem;}
+   
+    
+.forms-btn--submit{
+    width: 148px;
+    font-size: 1.8rem;
+    margin-top: 40px;}   
+    
+/* Desktop: Footer  */
+.footer-section--SM {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; }
+ 
+  
+  .footer-section--SM p {
+    grid-column: 1 / 3;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  .footer-section--ig {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-section--tt {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-section--ig-img,
+  .footer-section--tt-img {
+    margin-right: 8px;
+    width: 42px;
+
+  }
+  .footer-section--SM div a{font-size: 2rem;}
+ 
         
         
 
