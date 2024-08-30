@@ -198,6 +198,17 @@ footer{
     .navbar-nav {
         font-size: 1.8rem;
         margin:0 auto;}
+    
+        .navbar-nav {
+            font-size: 1.8rem;
+            margin:0 auto;
+            display: flex;
+            justify-content: space-around;}
+    
+    .navbar-nav li{
+        display: flex;
+        margin: auto 50px;}
+           
    
     header .navbar-brand img{width:98px;}
 
