@@ -415,6 +415,43 @@ header .navbar-brand img{width:98px;}
 
   
   .footer-section--SM div a{font-size: 2rem;}
+
+  /* Desktop: Nosotros */
+.nosotros-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin:auto 0;}
+  
+.nosotros-contenedor--left{
+    width:50%;
+    padding-right: 20px; }
+ 
+.nosotros-contenedor--right{width:50%;}
+
+.nosotros--pic{height: 500px;top:0; right: 0;}
+    
+.nosotros--pic img{width:315px;} 
+
+.nosotros-contenedor--left h1{
+    font-size: 2.4rem;
+}
+
+.nosotros--txt,.nosotros--misión p,
+.nosotros--visión p{font-size: 1.8rem;}
+    
+    
+.nosotros--misión h2,
+.nosotros--visión h2{font-size: 2rem;}
+
+
+
+
+
+
+  
+
  
         
         
