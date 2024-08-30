@@ -348,7 +348,7 @@ footer{
     .header--halfCircle img{width:120px;right: 0;}
 
     /* Desktop: home section */
-    .home-section{height: 490px;}
+    /*! .home-section{height: 490px;} */
             
     .deco--flower{width: 185px;}
             

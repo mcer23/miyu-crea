@@ -29,6 +29,9 @@ header{
 .navbar {
     position: relative; 
     z-index: 1000; }
+
+.navbar-nav a{color: black; }
+
 .navbar-toggler {
     border: none; 
     background: transparent;}
@@ -98,7 +101,8 @@ footer{
     text-align: center;
 }   
 
-.footer-section--ig img, .footer-section--tt img{
+.footer-section--ig img,
+.footer-section--tt img{
     width:26px;
     max-width: 42px;
     height: auto;}
@@ -112,8 +116,10 @@ footer{
     text-decoration: none;
     margin-left: 3px;}
 
-/******************? Catálogo *******************/
+/* C    A   T   A   L   O   G   O */
 .catalogo-section{
+    width:90%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;}
@@ -126,12 +132,84 @@ footer{
     margin-top: 20px;
     text-align: center;}
 
-.catalogo--pulsera{
+.catalogo--pulsera{position: relative;}
+.pulsera--alert{
+    position: absolute;
+    top:0;
+    left: 0;}
+.pulsera--alert img{
+    width:41px;
+    max-width: 72px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.catalogo--pulsera img,
+.catalogo--pulsera2 img,
+.catalogo--collar img{
+    width:90px;
+    max-width: 158px;
+    height: auto;}
+
+
+.catalogo--txt p{
+    color: #ED7AA9;
+    font-family: 'Titan one', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    text-align: center;}
+
+    .catalogo--txt a{
+        color:white;
+        background-color: #24B9FF;
+        text-decoration: none;
+        text-align: center;
+        width:60px;
+        max-width: 90px;
+        height: auto;
+
+    }    
+
+
+    
+    
+
+   
+
+
+
+
+/******************? Catálogo ******************
+.catalogo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%}
+
+.catalogo-section h1{
+    color: #ED7AA9;
+    font-family: 'Titan one', sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    text-align: center;}
+
+ .catalogo--pulsera{ /* Es para mantener el alert dentro de la imagen
+    width:100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;}
 
 .catalogo--pulsera2,
 .catalogo--collar{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;}
 
 .catalogo--pulsera,
@@ -139,10 +217,11 @@ footer{
 .catalogo--collar {
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+    margin-top: 20px;
+    width:100%}
 
-.catalogo--pulsera p, .catalogo--pulsera2 p,
-.catalogo--collar p{
+.catalogo--txt p{
     color: #ED7AA9;
     font-family: 'Titan one', sans-serif;
     font-size: 1.2rem;
@@ -163,7 +242,7 @@ footer{
 .pulsera--alert{
     position:absolute;
     top: 0;
-    left: 0;}
+    left: 2;}
 
 .pulsera--alert img{
     width: 41px;
@@ -171,24 +250,59 @@ footer{
     height: auto;}
     
 
-.catalogo--pulsera a,
-.catalogo--pulsera2 a,
-.catalogo--collar a {
+.catalogo--txt a {
     width: 79px;
     max-width: 137px;
     height: auto;
     background-color: #24B9FF;
     color: white;
     font-size: 1rem;
-    line-height: 1.6rem;
     text-align: center;
     border-radius: 4px;
     margin-top: 10px;
-    text-decoration: none;}
+    text-decoration: none;
+    display: flex;
+    justify-content: center;}
 
 
 .catalogo-numbers{
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 40px;}
+    margin-bottom: 40px;}*/
+
+@media (min-width:1279px){
+    /* Desktop: header */
+    .navbar-nav {
+        font-size: 1.8rem;
+        margin:0 auto;}
+    
+   
+    header .navbar-brand img{width:98px;}
+
+    .header--halfStar img{width:120px;right:10%;}
+
+    .header--halfCircle img{width:120px;right: 0;}
+
+     /* Desktop: home section */
+            
+     .deco--flower{width: 130px;}
+             
+     .deco--heart{width:156px;}
+
+        /* Desktop: Catalogo */
+
+
+
+
+     
+    
+    
+                  
+        
+
+
+
+}
+
+    
