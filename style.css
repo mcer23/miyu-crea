@@ -85,14 +85,14 @@ header .navbar-brand img{
     max-width: 185px;
     height: auto;
     position: absolute;
-    bottom: 0;
+    bottom: 20%; /*! prueba, sino es 0  */
     left: 0;}
 
 .deco--heart{
     width:63px;
     max-width: 146px;
     position: absolute;
-    top: .5;
+    top: 1; /*! prueba, sino es -5  */
     right: 0;}
 
 .home-section--img img{
@@ -286,13 +286,13 @@ footer{
 /* Tablet: home section */
 .home-section{height: 851px;}
         
-.deco--flower{
+/* .deco--flower{
         width: 115px;
         max-width: 185px;}
         
 .deco--heart{
         width:120px;
-        max-width: 146px;}
+        max-width: 146px;} */
 
 .home-section--img img{
         width: 240px;
