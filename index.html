@@ -61,18 +61,18 @@
         <!--              forms             -->
         <section class="forms-section">
             <h2>TU OPINIÓN NOS IMPORTA</h2>
-            <form class="forms-section--forms" action="guardar_opinion.php" method="post">
+            <form class="forms-section--forms" action="opinion.php" method="post">
                 <div class="mb-3">
                     <label for="nameImput" class="form-label">Nombre completo</label>
-                    <input type="text" class="form-control" id="nameImput" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="nameImput" name="nombreCompleto" required>
                   </div>
                 <div class="mb-3">
                   <label for="emailImput" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="emailImput" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="emailImput" name="email" required>
                 </div>
                 <div class="mb-3">
                   <label for="msjInput" class="form-label">Mensaje</label>
-                  <input type="password" class="form-control" id="msjInput">
+                  <input type="text" class="form-control" id="msjInput" name="mensaje" required>
                 </div>
                 <button type="submit" class="btn forms-btn--submit  animate__animated animate__headShake">Enviar</button>
               </form>
